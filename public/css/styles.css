@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+/* Reset  */
+body, h1, h2, h3, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Estilização do header */
+header {
+    background-color: #D2B8DB;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilização do menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #BF9BC2;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 2rem;
+}
+
+/* Estilo para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilização do Popup */
+.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bookPopup form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;  /* largura máxima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#bookPopup h3 {
+    margin-bottom: 1rem;
+}
+
+#bookPopup input[type="text"],
+#bookPopup input[type="date"],
+#bookPopup button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#bookPopup button[type="submit"] {
+    background: #B8B0DD;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#bookPopup button[type="submit"]:hover {
+    background: #B1C6DE;
+}
+
+#bookPopup #closePopupBtn {
+    background: #B1B8DE;
+    cursor: pointer;
+}
+
+#bookPopup #closePopupBtn:hover {
+    background: #B1C6DE;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #8B7EDE; /* Cor do ícone */
+    font-size: 1.2rem; /* Tamanho do ícone */
+    transition: color 0.3s;
+}
+
+.icon-btn:hover {
+    color: #675DA4; /* Cor do ícone ao passar o mouse */
+}
+
+/* Pode querer estilizar de forma diferente dependendo da ação */
+.icon-btn.delete {
+    color: #dc3545; /* Cor vermelha para a ação de excluir */
+}
+
+.icon-btn.delete:hover {
+    color: #b02130; /* Cor vermelha ao passar o mouse */
+}

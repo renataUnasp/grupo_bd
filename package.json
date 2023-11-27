@@ -1,0 +1,31 @@
+{
+  "name": "biblioteca-pessoal",
+  "version": "1.0.0",
+  "description": "Projeto didático para entender a integração WebApp com MySQL. Projeto voltado aos alunos do curso técnico de informática para a disciplina de Banco de dados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profmayck/Biblioteca-Pessoal.git"
+  },
+  "keywords": [
+    "Banco de Dados",
+    "Biblioteca Pessoal"
+  ],
+  "author": "Mayck \"Wazowski\" Cipriano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/profmayck/Biblioteca-Pessoal/issues"
+  },
+  "homepage": "https://github.com/profmayck/Biblioteca-Pessoal#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql2": "^3.0.0",
+    "nodemon": "^3.0.1"
+  }
+}

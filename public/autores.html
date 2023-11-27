@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Autores</title>
+</head>
+<body>    
+    <header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/livros.html">Livros</a></li>
+            <li><a href="/editora.html">Editora</a></li>
+            <li><a href="/autores.html">Autores</a></li>
+
+            <!-- Outras páginas podem ser adicionadas aqui -->
+        </ul>
+    </nav>
+    <h1>Autores</h1>
+    </header>
+
+    <main>
+        <h2>Lista de Autores</h2>
+        <button class="icon-btn" id="addBookBtn">
+            <i class="fas fa-plus"></i>  Adicionar
+        </button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nomes</th>
+                        <th>Biografia</th>
+                        <th>Data de Nascimento</th>
+                    </tr>
+                </thead>
+            </table>
+            </main>
+        
+            <!-- Popup para Adicionar/Atualizar Livro -->
+            <div id="bookPopup" class="hidden">
+                <form id="bookForm">
+                    <h3>Adicionar/Atualizar Autor</h3>
+                    <input type="hidden" id="id_autor">
+                    <input type="text" id="nome" placeholder="Nome" required>
+                    <input type="text" id="biografia" placeholder="Biografia" required>
+                    <input type="date" id="dataNascimento" placeholder="Data de Nascimento" required>
+                    <button type="submit">Salvar</button>
+                    <button type="button" id="closePopupBtn">Fechar</button>
+                </form>
+            </div>
+        
+            <script src="/js/app.js"></script>
+            <script src="/js/livros.js"></script>
+        </body>
+        
+        </html>
+        
+</header>
+</body>
+</html>
